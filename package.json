@@ -1,0 +1,25 @@
+{
+  "name": "bkc",
+  "version": "1.0.0",
+  "description": "Custom WordPress Theme",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bkaminski/bkc.git"
+  },
+  "keywords": [
+    "WordPress",
+    "Gulp",
+    "SASS",
+    "Bootstrap"
+  ],
+  "author": "Ben Kaminski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bkaminski/bkc/issues"
+  },
+  "homepage": "https://github.com/bkaminski/bkc#readme"
+}
