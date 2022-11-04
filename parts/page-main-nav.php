@@ -1,11 +1,11 @@
 <!-- begin desktop nav -->
 <header class="d-none d-lg-block">
-	<nav class="navbar navbar-expand-lg fixed-top shadow bg-primary">
+	<nav class="navbar navbar-expand-lg fixed-top shadow-lg bg-dark">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="<?php echo get_home_url(); ?>" >
 				<img src="<?php echo get_home_url(); ?>/wp-content/uploads/BK-LOGO.png" width="75" alt="<?php echo get_bloginfo('name') ?>" class="img-fluid">	
 			</a>
-			<div class="collapse navbar-collapse text-uppercase font-weight-bold" id="bkcNav">
+			<div class="collapse navbar-collapse text-uppercase" id="bkcNav">
 				<?php
 				wp_nav_menu( array(
 					'theme_location'    => 'primary',
@@ -13,7 +13,7 @@
 					'container'         => '',
 					'container_class'   => '',
 					'container_id'      => '',
-					'menu_class'        => 'navbar-nav ms-auto',
+					'menu_class'        => 'fw-bold navbar-nav ms-auto',
 					'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
 					'walker'            => new WP_Bootstrap_Navwalker(),
 				)); ?>
@@ -25,7 +25,7 @@
 <!-- end desktop nav -->
 <!-- begin mobile offcanvas nav -->
 <header class="d-block d-lg-none">
-	<nav class="navbar fixed-top shadow bg-primary">
+	<nav class="navbar fixed-top shadow bg-dark">
   		<div class="container-fluid">
     		<a class="navbar-brand" href="<?php echo get_home_url(); ?>">
     			<img src="<?php echo get_home_url(); ?>/wp-content/uploads/BK-LOGO.png" alt="<?php echo get_bloginfo('name') ?>" width="75" class="img-fluid">
@@ -53,7 +53,7 @@
     					'container'         => '',
     					'container_class'   => '',
     					'container_id'      => '',
-    					'menu_class'        => 'navbar-nav justify-content-end flex-grow-1 pe-3',
+    					'menu_class'        => 'fw-bold navbar-nav justify-content-end flex-grow-1 pe-3',
     					'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
     					'walker'            => new WP_Bootstrap_Navwalker(),
     				)); ?>

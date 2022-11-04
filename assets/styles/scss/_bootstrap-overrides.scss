@@ -6,7 +6,7 @@
     --bs-red: #dc3545;
     --bs-orange: #fd7e14;
     --bs-yellow: #ffc107;
-    --bs-green: #198754;
+    --bs-green: rgb(24, 179, 24);
     --bs-teal: #20c997;
     --bs-cyan: #0dcaf0;
     --bs-black: #000;
@@ -22,15 +22,15 @@
     --bs-gray-700: #495057;
     --bs-gray-800: #343a40;
     --bs-gray-900: #212529;
-    --bs-primary: #0d6efd;
-    --bs-secondary: #6c757d;
-    --bs-success: #198754;
-    --bs-info: #0dcaf0;
-    --bs-warning: #ffc107;
-    --bs-danger: #dc3545;
-    --bs-light: #f8f9fa;
-    --bs-dark: #212529;
-    --bs-primary-rgb: 13, 110, 253;
+    --bs-primary: #96d10c;
+    --bs-secondary: #126c37;
+    --bs-success: rgb(38, 170, 3);
+    --bs-info: #920f6f;
+    --bs-warning: #fcc303;
+    --bs-danger: #f40150;
+    --bs-light: #190c11;
+    --bs-dark: #191a1e;
+    --bs-primary-rgb: 150, 209, 12;
     --bs-secondary-rgb: 108, 117, 125;
     --bs-success-rgb: 25, 135, 84;
     --bs-info-rgb: 13, 202, 240;
@@ -65,4 +65,15 @@
     --bs-link-hover-color: #0a58ca;
     --bs-code-color: #d63384;
     --bs-highlight-bg: #fff3cd;
+  }
+
+  .nav-link {
+    color: #000;
+    margin-left: 1rem;
+    @include breakpoint (md) {
+      color: #fff;
+    }
+    &:hover {
+      color: rgb(24, 179, 24);
+    }
   }
