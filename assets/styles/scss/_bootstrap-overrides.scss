@@ -74,6 +74,8 @@
     }
     &:hover {
       color: rgb(0, 0, 0);
-      text-decoration: over;
+      text-decoration: overline;
+      text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+      transition: 0.3s ease-in-out;
     }
   }
