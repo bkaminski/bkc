@@ -66,7 +66,6 @@
     --bs-code-color: #d63384;
     --bs-highlight-bg: #fff3cd;
   }
-
   .nav-link {
     color: #000;
     margin-left: 1rem;
@@ -74,6 +73,7 @@
       color: #fff;
     }
     &:hover {
-      color: rgb(24, 179, 24);
+      color: #222;
+      text-decoration: overline;
     }
   }
