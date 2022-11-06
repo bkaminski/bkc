@@ -2,6 +2,6 @@
 
 <?php get_template_part( 'parts/home', 'hero' ); ?>
 
-
+<?php get_template_part( 'parts/home', 'main' ); ?>
 
 <?php get_footer(); ?>

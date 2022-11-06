@@ -1,6 +1,6 @@
 <!-- begin desktop nav -->
 <header class="d-none d-lg-block">
-	<nav class="navbar navbar-expand-lg fixed-top">
+	<nav class="navbar navbar-expand-lg fixed-top clearHeader">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="<?php echo get_home_url(); ?>" >
 				<img src="<?php echo get_home_url(); ?>/wp-content/uploads/BK-LOGO.png" width="75" alt="<?php echo get_bloginfo('name') ?>" class="img-fluid">	
@@ -25,7 +25,7 @@
 <!-- end desktop nav -->
 <!-- begin mobile offcanvas nav -->
 <header class="d-block d-lg-none">
-	<nav class="navbar fixed-top">
+	<nav class="navbar fixed-top clearHeader">
   		<div class="container-fluid">
     		<a class="navbar-brand" href="<?php echo get_home_url(); ?>">
     			<img src="<?php echo get_home_url(); ?>/wp-content/uploads/BK-LOGO.png" alt="<?php echo get_bloginfo('name') ?>" width="75" class="img-fluid">

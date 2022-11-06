@@ -5,8 +5,7 @@
         <p class="p3 h5 display-6" style="font-size:.305em;">Benjamin Kaminski Consulting</p>
     </div>
     <a class="hero-down" href="#this">
-        <div class="btn-react"></div>
-        <i class="fa fa-chevron-down"></i>
+        <i class="fa fa-chevron-down fa-lg"></i>
     </a>
 </section>
 

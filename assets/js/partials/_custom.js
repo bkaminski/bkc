@@ -1,5 +1,9 @@
 //jQuery no-conflict mode
 (function( $ ) {
+  $(document).ready(function(){
+    $(".p3").delay("8000").fadeIn();    
+  });    
+    
     $(function() {
         $(".p2").typed({
           strings: ["DEVELOPER", "CONSULTANT", "PARTNER"],
@@ -12,14 +16,14 @@
       });
       
       $('.hero-down').mousedown(function() {
-        TweenMax.fromTo('.btn-react', 0.25, {
+        TweenMax.fromTo('.bkc-main-content', 0.25, {
           opacity: 0,
           scale: 0
         }, {
           opacity: 0.25,
           scale: 1,
           onComplete: function() {
-            TweenMax.to('.btn-react', 0.25, {
+            TweenMax.to('.bkc-main-content', 0.25, {
               opacity: 0,
               scale: 0
             });
@@ -35,9 +39,42 @@
           if (target.length) {
             $('html,body').animate({
               scrollTop: target.offset().top
-            }, 1000);
+            }, 100).fadeIn('show');
             return false;
           }
         }
       });
+
+//Delay logo text load
+$(".p3").slideUp(1).delay(8000).slideDown('slow');
+
+//Scroll to top button
+$(document).ready(function(){ 
+  $(window).scroll(function(){ 
+      if ($(this).scrollTop() > 100) { 
+          $('#scroll').fadeIn(); 
+      } else { 
+          $('#scroll').fadeOut(); 
+      } 
+  }); 
+  $('#scroll').click(function(){ 
+      $("html, body").animate({ scrollTop: 0 }, 600); 
+      return false; 
+  }); 
+});
+
+$(function() {
+  //caches a jQuery object containing the header element
+  var header = $(".clearHeader");
+  $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+
+      if (scroll >= 200) {
+          header.removeClass('clearHeader').fadeIn('5000').addClass("bg-dark");
+      } else {
+          header.removeClass("bg-dark").addClass('clearHeader');
+      }
+  });
+});
+
 })( jQuery );
