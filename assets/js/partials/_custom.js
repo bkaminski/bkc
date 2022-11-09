@@ -4,11 +4,11 @@
   $(window).on("load", function () {
     setTimeout(function () {
       $("#preLoader").fadeOut("slow", function () {});
-    }, 600);
+    }, 0);
   });
 
   // Typed.js
-  $(function () {
+  $(document).ready(function () {
     $(".p2").typed({
       strings: ["DEVELOPER", "CONSULTANT", "PARTNER"],
       typeSpeed: 50,
@@ -93,9 +93,9 @@
       var scroll = $(window).scrollTop();
 
       if (scroll >= 200) {
-        header.removeClass("clearHeader").fadeIn("5000").addClass("bg-dark");
+        header.removeClass("clearHeader").fadeIn("5000").addClass("bg-tinted");
       } else {
-        header.removeClass("bg-dark").addClass("clearHeader");
+        header.removeClass("bg-tinted").addClass("clearHeader");
       }
     });
   });

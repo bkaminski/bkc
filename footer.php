@@ -1,5 +1,5 @@
 <footer class="footer">
-    <a href="javascript:" id="back-up" title="Back to Top">
+    <a href="javascript:" class="text-center" id="back-up" title="Back to Top">
         <i class="fa fa-chevron-up fa-lg text-white"></i>
     </a>
 

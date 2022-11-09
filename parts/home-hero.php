@@ -1,4 +1,4 @@
-<section class="hero">
+<section class="hero parallax-window text-center" data-parallax="scroll" data-image-src="<?php echo get_home_url(); ?>/wp-content/uploads/background-5077810.svg">
     <div class="inner-text">
         <p class="p1"><?php echo ('YOUR'); ?></p>
         <p class="p2"><?php echo ('DEVELOPER'); ?></p>
