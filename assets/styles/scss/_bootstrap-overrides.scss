@@ -41,6 +41,14 @@
   font-size: 0.8rem;
 }
 .mobile-text-logo {
-  padding-left:1.5rem;
+  padding-left:0.5rem;
   font-family: 'PingFang SC Regular', sans-serif;
+}
+.btn-bkc-success {
+  background-color: #96d10c;
+  color: #fff;
+  &:hover {
+    background-color: #54d10c;
+    color: #fff;
+  }
 }

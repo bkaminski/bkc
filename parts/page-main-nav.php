@@ -33,11 +33,11 @@
 			</a>
 			<br>
 			<button class="navbar-toggler rounded-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-				<i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+				<i class="fa fa-bars fa-3x" aria-hidden="true"></i>
 			</button>
 			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 				<div class="offcanvas-header">
-					<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Navigation</h5>
+					<h5 class="offcanvas-title text-shadow text-uppercase" id="offcanvasNavbarLabel">Navigation</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 				</div>
 				<div class="offcanvas-body">
@@ -59,8 +59,8 @@
 						'walker'            => new WP_Bootstrap_Navwalker(),
 					)); ?>
 					<form class="d-flex pt-3" role="search">
-						<input id="searchBkc" type="text" class="form-control form-control-lg rounded-0" placeholder="Enter search term" aria-label="Search This Site" aria-describedby="button-addon2" value="<?php echo esc_html($s, 1); ?>" name="s" maxlength="33" required>
-						<button class="btn btn-success rounded-0" type="submit">Search</button>
+						<input id="searchBkc" type="text" class="form-control form-control-lg rounded-0" placeholder="Search This Site" aria-label="Search This Site" aria-describedby="button-addon2" value="<?php echo esc_html($s, 1); ?>" name="s" maxlength="33" required>
+						<button class="btn btn-bkc-success rounded-0" type="submit">Search</button>
 					</form>
 				</div>
 			</div>
