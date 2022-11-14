@@ -17,7 +17,7 @@ if ($open < $price) {
     $change = $price - $open;
     $percent = ($change / $open) * 100;
     $percentChange = number_format($percent, 2);
-    $percentChange = '<i class="fa fa-chevron-down text-danger"></i>' . $percentChange . "%";
+    $percentChange = '<i class="fa fa-chevron-up text-green"></i>' . $percentChange;
     $color = "#96d10c";
 }
 
@@ -32,7 +32,7 @@ if ($open > $price) {
 $priceData = <<<EOT
     <div class="row">
         <div class="col-lg-8 text-center">
-            <h3><i class="fab fa-bitcoin fa-lg fa-fw"></i><span style="margin-left: 0.6rem;">Bitcoin Price</span></h3>
+            <h3><i class="fab fa-bitcoin fa-lg fa-fw satoshi-orange"></i><span style="margin-left: 0.6rem;">Bitcoin Price</span></h3>
         </div>
         <div class="col-lg-4 text-center">
             <p class="h3 fw-bold" style="color:$color">$$price2</p>

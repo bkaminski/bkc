@@ -11,6 +11,7 @@
                 <div id="btcData"></div>
                 <div class="text-center pt-4">
                     <img src="<?php echo get_home_url(); ?>/wp-content/uploads/bkcbtcqr.png" alt="Bitcoin QR Code" class="img-fluid">
+                    <br>
                     <code class="text-green">3EWgQDw5X4zvPiJLeadQHQhtd7TStLDtWQ</code>
                 </div>
             </div>
