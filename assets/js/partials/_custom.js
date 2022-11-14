@@ -20,7 +20,7 @@
     });
   });
 
-  $(".hero-down").mousedown(function () {
+  $(".hero-down").click(function () {
     TweenMax.fromTo(
       ".btn-react",
       0.25,
@@ -68,16 +68,15 @@
   $(".p3").slideUp(0).delay(8000).slideDown(1000);
 
   //BTC Price Widget
-  $('document').ready(function () {
+  $("document").ready(function () {
     refreshData();
   });
 
-  function refreshData(){
-    $('#btcData').load( "wp-content/themes/bkc/btc-data.php" , function() {
-      setTimeout(refreshData, 15000);
-  });
-  };
-
+  function refreshData() {
+    $("#btcData").load("/bkc/wp-content/themes/bkc/btc-data.php", function () {
+      setTimeout(refreshData, 30000);
+    });
+  }
 
   //SCROLL TO TOP
   $(window).scroll(function () {
@@ -98,20 +97,24 @@
   });
 
   //change navbar on scroll
-  $(function () {
-    //caches a jQuery object containing the header element
-    var header = $(".clearHeader");
-    $(window).scroll(function () {
-      var scroll = $(window).scrollTop();
+  if (top.location.pathname === "/bkc/") {
+    $(function () {
+      //caches a jQuery object containing the header element
+      var header = $(".clearHeader");
+      $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
 
-      if (scroll >= 200) {
-        header.removeClass("clearHeader").fadeIn("5000").addClass("bg-tinted");
-      } else {
-        header.removeClass("bg-tinted").addClass("clearHeader");
-      }
+        if (scroll >= 200) {
+          header
+            .removeClass("clearHeader")
+            .fadeIn("5000")
+            .addClass("bg-tinted");
+        } else {
+          header.removeClass("bg-tinted").addClass("clearHeader");
+        }
+      });
     });
-  });
-
+  }
   //REMOVE TITLE TAG FROM LINK HOVER
   $(".nav-link").removeAttr("title");
 

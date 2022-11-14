@@ -8,11 +8,11 @@
         function checkWidth() {
     
             if ($window.width() < 976) {
-                
+                $(".bkc--info").addClass('text-center pb-5');
                 
             };
             if ($window.width() >= 976) {
-                
+                $(".bkc--info").removeClass('text-center pb-5');
                 
             }
         }

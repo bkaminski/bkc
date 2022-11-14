@@ -11,7 +11,8 @@ $low = $json['low'];
 $low2 = number_format($low);
 $open = $json['open'];
 date_default_timezone_set('US/Eastern');
-$date = date('M jS Y h:ia');
+$date = date('M jS Y');
+$time = date('h:ia');
 
 if ($open < $price) {
     $change = $price - $open;
@@ -31,22 +32,24 @@ if ($open > $price) {
 
 $priceData = <<<EOT
     <div class="row">
-        <div class="col-lg-8 text-center">
+        <div class="col-lg-12 text-center">
             <h3><i class="fab fa-bitcoin fa-lg fa-fw satoshi-orange"></i><span style="margin-left: 0.6rem;">Bitcoin Price</span></h3>
         </div>
-        <div class="col-lg-4 text-center">
-            <p class="h3 fw-bold" style="color:$color">$$price2</p>
-        </div>
     </div>
-    <div class="row pt-2">
-        <div class="col-lg text-center">
-            <p class="h3" style="color:$color;">$percentChange%</p>
+    <div class="row">
+        <div class="col-lg-6 text-center">
+            <p class="h2 fw-bold" style="color:$color">$$price2</p>
         </div>
+        <div class="col-lg-6 text-center">
+            <p class="h5 pt-2" style="color:$color;">$percentChange%</p>
+        </div>
+    </div>   
+    <div class="row pt-2">
         <div class="col-lg pt-1 text-center">
             <p class="h6">$$high2 H</p>
             <p class="h6">$$low2 L</p>
         </div>
-        <div class="col-lg text-center">$date EDT</div>
+        <div class="col-lg text-center">$date<br>$time</div>
     </div>
     EOT;
 echo $priceData;

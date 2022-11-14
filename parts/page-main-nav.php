@@ -1,26 +1,30 @@
 <!-- begin desktop nav -->
 <header class="d-none d-lg-block">
-	<nav class="navbar navbar-expand-lg fixed-top clearHeader">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="<?php echo get_home_url(); ?>">
-				<img src="<?php echo get_home_url(); ?>/wp-content/uploads/BK-LOGO.svg" width="75" alt="<?php echo get_bloginfo('name') ?>" class="img-fluid">
-			</a>
-			<div class="collapse navbar-collapse text-uppercase" id="bkcNav">
-				<?php
-				wp_nav_menu(array(
-					'theme_location'    => 'primary',
-					'depth'             => 2,
-					'container'         => '',
-					'container_class'   => '',
-					'container_id'      => '',
-					'menu_class'        => 'fw-bold navbar-nav ms-auto',
-					'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-					'walker'            => new WP_Bootstrap_Navwalker(),
-				)); ?>
+	<?php if (is_front_page()) { ?>
+		<nav class="navbar navbar-expand-lg fixed-top clearHeader">
+		<?php } else { ?>
+			<nav class="navbar navbar-expand-lg fixed-top bg-none bg-tinted">
+			<?php } ?>
+			<div class="container-fluid">
+				<a class="navbar-brand" href="<?php echo get_home_url(); ?>">
+					<img src="<?php echo get_home_url(); ?>/wp-content/uploads/BK-LOGO.svg" width="75" alt="<?php echo get_bloginfo('name') ?>" class="img-fluid">
+				</a>
+				<div class="collapse navbar-collapse text-uppercase" id="bkcNav">
+					<?php
+					wp_nav_menu(array(
+						'theme_location'    => 'primary',
+						'depth'             => 2,
+						'container'         => '',
+						'container_class'   => '',
+						'container_id'      => '',
+						'menu_class'        => 'fw-bold navbar-nav ms-auto',
+						'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+						'walker'            => new WP_Bootstrap_Navwalker(),
+					)); ?>
 
+				</div>
 			</div>
-		</div>
-	</nav>
+			</nav>
 </header>
 <!-- end desktop nav -->
 <!-- begin mobile offcanvas nav -->

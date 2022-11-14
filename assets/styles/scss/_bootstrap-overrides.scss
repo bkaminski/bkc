@@ -15,6 +15,7 @@
 .bg-tinted {
   display: none;
   @include breakpoint(md) {
+    display: block;
     backdrop-filter: blur(5px);
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.5);
