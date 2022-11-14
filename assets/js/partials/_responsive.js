@@ -8,11 +8,11 @@
         function checkWidth() {
     
             if ($window.width() < 976) {
-                //do jQuery stuff
+                
                 
             };
             if ($window.width() >= 976) {
-                //do jQuery stuff
+                
                 
             }
         }

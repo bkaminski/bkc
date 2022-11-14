@@ -67,6 +67,18 @@
   //Delay logo text load
   $(".p3").slideUp(0).delay(8000).slideDown(1000);
 
+  //BTC Price Widget
+  $('document').ready(function () {
+    refreshData();
+  });
+
+  function refreshData(){
+    $('#btcData').load( "wp-content/themes/bkc/btc-data.php" , function() {
+      setTimeout(refreshData, 15000);
+  });
+  };
+
+
   //SCROLL TO TOP
   $(window).scroll(function () {
     if ($(this).scrollTop() >= 250) {
