@@ -22,7 +22,7 @@
 
   $(".hero-down").mousedown(function () {
     TweenMax.fromTo(
-      ".hero-down",
+      ".btn-react",
       0.25,
       {
         opacity: 0,
@@ -32,7 +32,7 @@
         opacity: 0.25,
         scale: 1,
         onComplete: function () {
-          TweenMax.to(".bkc-main-content", 0.25, {
+          TweenMax.to(".btn-react", 0.25, {
             opacity: 0,
             scale: 0,
           });

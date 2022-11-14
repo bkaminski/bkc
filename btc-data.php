@@ -4,11 +4,11 @@ $content = file_get_contents($apiurl);
 $json = json_decode($content, true);
 
 $price = $json['last'];
-$price2 = number_format($price, 2);
+$price2 = number_format($price);
 $high = $json['high'];
-$high2 = number_format($high, 2);
+$high2 = number_format($high);
 $low = $json['low'];
-$low2 = number_format($low, 2);
+$low2 = number_format($low);
 $open = $json['open'];
 date_default_timezone_set('US/Eastern');
 $date = date('M jS Y h:ia');
@@ -28,10 +28,11 @@ if ($open > $price) {
     $percentChange = '<i class="fa fa-chevron-down text-danger"></i> '  . $percentChange;
     $color = "#cf2e2e";
 }
+
 $priceData = <<<EOT
     <div class="row">
         <div class="col-lg-8 text-center">
-            <h3 class="text-white"><i class="fab fa-bitcoin fa-lg fa-fw"></i><span style="margin-left: 0.6rem;">Bitcoin Price</span></h3>
+            <h3><i class="fab fa-bitcoin fa-lg fa-fw"></i><span style="margin-left: 0.6rem;">Bitcoin Price</span></h3>
         </div>
         <div class="col-lg-4 text-center">
             <p class="h3 fw-bold" style="color:$color">$$price2</p>
