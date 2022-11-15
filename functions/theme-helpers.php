@@ -91,7 +91,7 @@ add_filter('post_thumbnail_html', 'bootstrap_fluid_images', 10);
 function excerpt_read_more_link($output)
 {
 	global $post;
-	return $output . '<a class="btn btn-dark text-uppercase" href="' . get_permalink() . '">Read More  <i class="fas fa-arrow-right fa-fw"></i></a>';
+	return $output . '<a class="btn btn-dark text-uppercase" href="' . get_permalink() . '">Read More  <i class="fas fa-arrow-right fa-fw"></i></a><br><hr>';
 }
 add_filter('the_excerpt', 'excerpt_read_more_link');
 
@@ -109,8 +109,8 @@ function url_filtered($fields)
  * Display template for comments and pingbacks.
  *
  */
-if (!function_exists('strapped_down_comment')) :
-	function strapped_down_comment($comment, $args, $depth)
+if (!function_exists('bkc_comment')) :
+	function bkc_comment($comment, $args, $depth)
 	{
 		$GLOBALS['comment'] = $comment;
 		switch ($comment->comment_type):
@@ -119,7 +119,7 @@ if (!function_exists('strapped_down_comment')) :
 				<span id="comment-<?php comment_ID(); ?>">
 					<div class="card mb-1">
 						<div class="card-header">
-							<h4 class="card-title"><?php _e('<i class="fas fa-share-alt fa-fw fa-lg"></i>&nbsp;Pingback:', 'strapped_down'); ?></h4>
+							<h4 class="card-title"><?php _e('<i class="fas fa-share-alt fa-fw fa-lg"></i>&nbsp;Pingback:', 'bkc'); ?></h4>
 						</div>
 						<div class="card-body">
 							<?php comment_author_link(); ?>
@@ -143,7 +143,7 @@ if (!function_exists('strapped_down_comment')) :
 										// If current post author is also comment author, make it known visually.
 										($comment->user_id === $post->post_author) ? '<br /><span class="badge bg-secondary"><i class="fas fa-pencil-alt fa-fw"></i> ' . __(
 											'Post author',
-											'strapped_down'
+											'bkc'
 										) . '</span> ' : ''
 									); ?>
 								</h4>
@@ -153,7 +153,7 @@ if (!function_exists('strapped_down_comment')) :
 										esc_url(get_comment_link($comment->comment_ID)),
 										get_comment_time('c'),
 										sprintf(
-											__('%1$s at %2$s', 'strapped_down'),
+											__('%1$s at %2$s', 'bkc'),
 											get_comment_date(),
 											get_comment_time()
 										)
@@ -163,7 +163,7 @@ if (!function_exists('strapped_down_comment')) :
 							<?php if ('0' == $comment->comment_approved) : ?>
 								<p class="alert alert-warning"><?php _e(
 																	'Your comment has been submitted and is awaiting moderation. Thank you.',
-																	'strapped_down'
+																	'bkc'
 																); ?></p>
 							<?php endif; ?>
 							<div class="card-body">
@@ -171,7 +171,7 @@ if (!function_exists('strapped_down_comment')) :
 								<?php comment_reply_link(array_merge(
 									$args,
 									array(
-										'reply_text' => __('<button class="btn btn-info btn-md"><i class="far fa-comment-alt fa-fw fa-lg"></i>&nbsp;Reply</button>', 'strapped_down'),
+										'reply_text' => __('<button class="btn btn-info btn-md"><i class="far fa-comment-alt fa-fw fa-lg"></i>&nbsp;Reply</button>', 'bkc'),
 										'depth'      => $depth,
 										'max_depth'  => $args['max_depth']
 									)
