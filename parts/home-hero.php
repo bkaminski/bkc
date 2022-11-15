@@ -4,7 +4,7 @@
         <p class="p2"><?php echo ('DEVELOPER'); ?></p>
         <p class="p3 h5 display-6 bkc-text" style="font-size:.305em;">Benjamin Kaminski Consulting</p>
     </div>
-    <a class="hero-down" href="#this">
+    <a class="hero-down" href="#go2main">
         <div class="btn-react"></div>
         <i class="fa fa-chevron-down fa-lg"></i>
     </a>
