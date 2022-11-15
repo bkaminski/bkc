@@ -5,10 +5,20 @@ body.home {
 body {
   color: #f5f5f5;
 }
-.bkc-text {
-  color: #222;
+@font-face {
+  font-family: "PFFC-light";
+  src: url("PFFC-light") format("ttf"), url("PFFC-light") format("ttf");
+  font-weight: normal;
+  font-style: normal;
 }
-h1,
+.bkc-text {
+  font-family: "PFFC-light", sans-serif;
+  font-weight: 300;
+}
+h1 {
+  font-family: "PFFC-Light", sans-serif;
+  font-weight: 600;
+}
 h2,
 h3,
 h4,
@@ -26,7 +36,7 @@ h6 {
   color: #222;
 }
 .satoshi-orange {
-  color:#FF9900;
+  color: #ff9900;
 }
 
 /* end text colors */
@@ -217,4 +227,3 @@ h6 {
 .text-shadow {
   text-shadow: 2px 3px 0px #000;
 }
-

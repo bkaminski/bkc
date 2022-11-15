@@ -7,7 +7,7 @@
 			<?php } ?>
 			<div class="container-fluid">
 				<a class="navbar-brand" href="<?php echo get_home_url(); ?>">
-					<img src="<?php echo get_home_url(); ?>/wp-content/uploads/BK-LOGO.svg" width="75" alt="<?php echo get_bloginfo('name') ?>" class="img-fluid">
+					<img src="<?php echo get_home_url(); ?>/wp-content/uploads/bk-logo-black.svg" width="75" alt="<?php echo get_bloginfo('name') ?>" class="img-fluid">
 				</a>
 				<div class="collapse navbar-collapse text-uppercase" id="bkcNav">
 					<?php
@@ -32,8 +32,8 @@
 	<nav class="navbar fixed-top bg-dark">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="<?php echo get_home_url(); ?>">
-				<img src="<?php echo get_home_url(); ?>/wp-content/uploads/BK-LOGO.svg" alt="<?php echo get_bloginfo('name') ?>" width="75" class="img-fluid">
-				<span class="text-white mobile-text-logo">Benjamin Kaminski Consulting</span>
+				<img src="<?php echo get_home_url(); ?>/wp-content/uploads/bk-logo-black.svg" alt="<?php echo get_bloginfo('name') ?>" width="75" class="img-fluid">
+				<span class="text-white bkc-text">Benjamin Kaminski Consulting</span>
 			</a>
 			<br>
 			<button class="navbar-toggler rounded-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -47,7 +47,7 @@
 				<div class="offcanvas-body">
 					<div class="text-center mb-4">
 						<a href="<?php echo get_home_url(); ?>">
-							<img src="<?php echo get_home_url(); ?>/wp-content/uploads/BK-LOGO.svg" alt="<?php echo get_bloginfo('name') ?>" width="75" class="img-fluid">
+							<img src="<?php echo get_home_url(); ?>/wp-content/uploads/bk-logo-black.svg" alt="<?php echo get_bloginfo('name') ?>" width="75" class="img-fluid">
 							<br />
 						</a>
 					</div>

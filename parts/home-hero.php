@@ -2,7 +2,7 @@
     <div class="inner-text">
         <p class="p1"><?php echo ('YOUR'); ?></p>
         <p class="p2"><?php echo ('DEVELOPER'); ?></p>
-        <p class="p3 h5 display-6" style="font-size:.305em;">Benjamin Kaminski Consulting</p>
+        <p class="p3 h5 display-6 bkc-text" style="font-size:.305em;">Benjamin Kaminski Consulting</p>
     </div>
     <a class="hero-down" href="#this">
         <div class="btn-react"></div>
