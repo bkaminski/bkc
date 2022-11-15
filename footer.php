@@ -22,8 +22,8 @@
                 </div>
             </div>
             <div class="col-md-4 text-center">
-                <h3>Random Facts</h3>
-
+                <h3>Nerdy Quotes</h3>
+                <?php echo get_template_part('parts/page', 'nerdy-quotes'); ?>
             </div>
         </div>
     </div>

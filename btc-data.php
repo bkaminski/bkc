@@ -18,7 +18,7 @@ if ($open < $price) {
     $change = $price - $open;
     $percent = ($change / $open) * 100;
     $percentChange = number_format($percent, 2);
-    $percentChange = '<i class="fa fa-chevron-up text-green"></i>' . $percentChange;
+    $percentChange = '<i class="fa fa-chevron-up text-green"></i> ' . $percentChange;
     $color = "#96d10c";
 }
 
