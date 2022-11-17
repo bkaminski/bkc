@@ -6,7 +6,7 @@
                 the_post(); ?>
                 <div class="col">
                     <div class="card text-dark h-100 shadow">
-                        <div id="post-<?php the_ID(); ?>" class="carousel vertical slide" data-bs-ride="carousel" data-bs-interval="<?php echo rand(3000, 5500); ?>">
+                        <div id="post-<?php the_ID(); ?>" class="carousel vertical slide" data-bs-ride="carousel" data-bs-interval="<?php echo rand(3500, 6000); ?>">
                             <div class="carousel-inner" role="listbox">
                                 <div class="carousel-item active">
                                     <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>">
@@ -19,14 +19,13 @@
                                     </a>
                                 </div>
                             </div>
-                            </div>
-                            <div class="card-body" style="border-top: 2px solid #000;">
-                                <p class="card-text text-dark"><?php the_excerpt(); ?></p>
-                            </div>
-                            <div class="card-footer bg-dark">
-                                <small class="text-green"><em>Last updated: <?php the_time('m/d/Y  g:i:a'); ?></em></small>
-                            </div>
-
+                        </div>
+                        <div class="card-body" style="border-top: 2px solid #000;">
+                            <p class="card-text text-dark"><?php the_excerpt(); ?></p>
+                        </div>
+                        <div class="card-footer bg-dark">
+                            <small class="text-green"><em>Last updated: <?php the_time('m/d/Y  g:i:a'); ?></em></small>
+                        </div>
                     </div>
                 </div>
             <?php } ?>
