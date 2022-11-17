@@ -30,6 +30,11 @@ if ($open > $price) {
     $color = "#cf2e2e";
 }
 
+if ($open == $price) {
+    $percentChange = "0.00";
+    $color = "#fff";
+}
+
 $priceData = <<<EOT
     <div class="row">
         <div class="col-lg-12 text-center">

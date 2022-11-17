@@ -21,6 +21,13 @@ h6 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 900;
 }
+a {
+  color: #fcc303;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    color: #c79905;
+  }
+}
 
 /* helper text colors */
 .text-green {
@@ -220,4 +227,22 @@ h6 {
 }
 .text-shadow {
   text-shadow: 2px 3px 0px #000;
+}
+
+.theme-colors {
+  color: #190c11;
+  color: #191a1e;
+  color: #96d10c;
+  color: #126c37;
+  color: #920f6f;
+  color: #26aa03;
+  color: #fcc303;
+  color: #f40150;
+  color: #191a1e;
+  color: #96d10c;
+  color: #126c37;
+  color: #920f6f;
+  color: #26aa03;
+  color: #fcc303;
+  color: #f40150;
 }

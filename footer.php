@@ -9,9 +9,7 @@
                 <p>Smyrna, Delaware, USA<br>
                     (302) 333-7462</p>
                 <p><a href="contact">Contact</a> | <a href="privacy-policy">Privacy</a></p>
-                <a href="<?php echo get_home_url(); ?>">
-                    <img src="<?php echo get_home_url(); ?>/wp-content/uploads/bk-logo-black.svg" alt="<?php echo get_bloginfo('name') ?>" width="125" class="img-fluid pb-3">
-                </a>
+                <a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_home_url(); ?>/wp-content/uploads/bk-logo-black.svg" alt="<?php echo get_bloginfo('name') ?>" width="125" class="img-fluid pb-3"></a>
                 <br>
                 <a target="noopener" href="https://www.linkedin.com/in/kaminskiben/"><i class="fab fa-linkedin text-green fa-3x fa-fw"></i></a> <a target="noopener" href="https://github.com/bkaminski"><i class="fab fa-github-square text-green fa-3x fa-fw"></i></a>
             </div>
