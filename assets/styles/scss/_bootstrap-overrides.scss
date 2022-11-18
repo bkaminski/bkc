@@ -53,6 +53,13 @@
     color: #fff;
   }
 }
+.btn-keepreading {
+  position:absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 60px;
+  margin-right: 20px;
+}
 
 /* Vertical Carousel */
 .vertical.carousel .carousel-item {
@@ -100,11 +107,17 @@
   bottom: 0;
 }
 
-
 .pagination {
   padding-top: 1rem;
   padding-bottom: 1rem;
   width: 100%;
   background: #fcc303;
   margin-bottom: 0;
+}
+
+li.active a {
+  color: #fcc303;
+}
+.card {
+  border-right: 3px solid rgba(0, 0, 0, 0.5);
 }

@@ -28,7 +28,10 @@ a {
     color: #c79905;
   }
 }
-
+p {
+  font-size: 1.3rem;
+  font-family: 'Roboto', sans-serif;
+}
 /* helper text colors */
 .text-green {
   color: #96d10c;
@@ -38,6 +41,12 @@ a {
 }
 .satoshi-orange {
   color: #ff9900;
+}
+.page-header {
+  width: 100%;
+  min-height: 300px;
+  background-color: #920f6f;
+  padding-top: 10rem;
 }
 
 /* end text colors */
@@ -227,6 +236,9 @@ a {
 }
 .text-shadow {
   text-shadow: 2px 3px 0px #000;
+}
+.bkc-blog {
+  overflow: hidden;
 }
 
 .theme-colors {

@@ -16,7 +16,7 @@ function enqueue_dmi_styles()
 {
     wp_enqueue_style('bootstrap-5.2.2', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css');
     wp_enqueue_style('bkc-styles', get_template_directory_uri() . '/assets/styles/bkcStyles.min.css');
-    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
+    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Source+Sans+Pro:wght@900&display=swap');
 }
 add_action('wp_enqueue_scripts', 'enqueue_dmi_styles');
 

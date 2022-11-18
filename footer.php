@@ -16,7 +16,7 @@
             <div class="col-md-4 pb-4">
                 <div id="btcData"></div>
                 <div class="text-center pt-4">
-                    <code class="text-white">I enjoy Bitcoin donations!</code>
+                    <code class="text-white">I proudly accept Bitcoin donations!</code>
                     <br>
                     <img src="<?php echo get_home_url(); ?>/wp-content/uploads/bkcbtcqr.png" alt="Bitcoin QR Code" class="img-fluid">
                     <br>
@@ -32,7 +32,7 @@
     <div class="container text-center pt-5">
         <div class="row">
             <div class="col-md-12">
-                <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. All Rights Reserved.</p>
+                <p class="small">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. All Rights Reserved.</p>
             </div>
         </div>
     </div>

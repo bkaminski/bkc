@@ -91,7 +91,7 @@ add_filter('post_thumbnail_html', 'bootstrap_fluid_images', 10);
 function excerpt_read_more_link($output)
 {
 	global $post;
-	return $output . '<a class="btn btn-dark text-uppercase" href="' . get_permalink() . '">Read More  <i class="fas fa-arrow-right fa-fw"></i></a><br><hr>';
+	return $output . '<a class="btn btn-lg btn-bkc-success text-dark text-uppercase btn-keepreading shadow rounded-0" href="' . get_permalink() . '">Keep Reading  <i class="fas fa-arrow-right fa-fw"></i></a><br>';
 }
 add_filter('the_excerpt', 'excerpt_read_more_link');
 
