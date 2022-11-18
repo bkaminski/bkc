@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 <?php get_template_part('parts/page', 'header'); ?>
+<?php get_template_part('parts/page', 'blog-sort'); ?>
 <article class="bkc-blog pt-5">
     <div class="container pt-5 pb-5" style="overflow:hiddjn;">
         <div class="row row-cols-1 row-cols-lg-3 g-4 pt-5 pb-5">

@@ -54,11 +54,17 @@
   }
 }
 .btn-keepreading {
-  position:absolute;
+  position: absolute;
   bottom: 0;
   right: 0;
   margin-bottom: 60px;
   margin-right: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    margin-top: 60px;
+  }
 }
 
 /* Vertical Carousel */
@@ -120,4 +126,7 @@ li.active a {
 }
 .card {
   border-right: 3px solid rgba(0, 0, 0, 0.5);
+}
+.card-body p {
+  padding-bottom: 2rem;
 }

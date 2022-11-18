@@ -97,7 +97,7 @@
   });
 
   //change navbar on scroll
-  if (top.location.pathname === "/bkc/") {
+  
     $(function () {
       //caches a jQuery object containing the header element
       var header = $(".clearHeader");
@@ -114,7 +114,7 @@
         }
       });
     });
-  }
+  
   //REMOVE TITLE TAG FROM LINK HOVER
   $(".nav-link").removeAttr("title");
 
