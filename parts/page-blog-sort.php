@@ -1,19 +1,18 @@
 <div class="container text-center">
-    <h3 class="text-dark pt-5 text-center">Sort Posts</h3>
+    <h3 class="text-dark pt-5 text-center" onChange="window.location.href=this.value">Select Category</h3>
     <div class="col">
-        <?php if (is_archive()) { ?>
-            <select name="sort-posts" id="sortbox" class="form-select form-select-lg shadow-lg" aria-label="Select Post Category" onchange="document.location.href='?'+this.options[this.selectedIndex].value;">
-            <?php } else { ?>
-                <select name="sort-posts" id="sortbox" class="form-select form-select-lg shadow-lg" aria-label="Select Post Category" onchange="document.location.href='?s<?php the_search_query(); ?>?cat=<?php echo $_GET['cat']; ?>&'+this.options[this.selectedIndex].value;">
-                <?php } ?>
-                <option selected disabled>Choose Category</option>
-                <option value="orderby=date&order=desc">Newest</option>
-                <option value="orderby=date&order=asc">Oldest</option>
-                <option value="orderby=title&order=asc">Title A - Z</option>
-                <option value="orderby=title&order=desc">Title Z - A</option>
-                <option value="orderby=comment_count&order=desc">Most Comments</option>
-                <option value="orderby=comment_count&order=asc">Least Comments</option>
-                </select>
+        <select id="bkcSelect" class="form-select form-select-lg" aria-label="Select Blog Category">
+            <option selected disabled>Choose Category</option>
+            <option value="<?php echo get_home_url(); ?>/web-development-blog">Development Blog</option>
+            <option value="<?php echo get_home_url(); ?>/other-blog">Other Blog</option>
+            <option value="<?php echo get_home_url(); ?>/blog">All Blog Posts</option>
+        </select>
     </div>
-    <p class="text-center text-dark pt-5">Viewing Sorted: <?php echo $_GET['orderby']; ?> <?php echo $_GET['order']; ?></p>
 </div>
+<script>
+    document.getElementById("bkcSelect").onchange = function() {
+        if (this.selectedIndex!==0) {
+            window.location.href = this.value;
+        }        
+    };
+</script>

@@ -179,8 +179,9 @@ if (!function_exists('bkc_comment')) :
 							</div>
 						</div>
 					</div>
-	<?php
+			<?php
 				break;
 		endswitch;
 	}
 endif;
+// end bkc_comment
