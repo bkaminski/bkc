@@ -56,8 +56,8 @@ $wp_query   = $custom_query;
                 <div class="col-6">
                     <span class="float-end">
                         <?php next_posts_link('Older Posts >', $custom_query->max_num_pages);
-                            $wp_query = NULL;
-                            $wp_query = $temp_query; ?>
+                        $wp_query = NULL;
+                        $wp_query = $temp_query; ?>
                     </span>
                 </div>
             </div>
