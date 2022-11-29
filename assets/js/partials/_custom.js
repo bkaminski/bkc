@@ -20,27 +20,6 @@
     });
   });
 
-  $(".hero-down").click(function () {
-    TweenMax.fromTo(
-      ".btn-react",
-      0.25,
-      {
-        opacity: 0,
-        scale: 0,
-      },
-      {
-        opacity: 0.25,
-        scale: 1,
-        onComplete: function () {
-          TweenMax.to(".btn-react", 0.25, {
-            opacity: 0,
-            scale: 0,
-          });
-        },
-      }
-    );
-  });
-
   // smooth scroll to div
   $("a[href*=#]:not([href=#])").click(function () {
     if (
@@ -97,24 +76,21 @@
   });
 
   //change navbar on scroll
-  
-    $(function () {
-      //caches a jQuery object containing the header element
-      var header = $(".clearHeader");
-      $(window).scroll(function () {
-        var scroll = $(window).scrollTop();
 
-        if (scroll >= 200) {
-          header
-            .removeClass("clearHeader")
-            .fadeIn("5000")
-            .addClass("bg-tinted");
-        } else {
-          header.removeClass("bg-tinted").addClass("clearHeader");
-        }
-      });
+  $(function () {
+    //caches a jQuery object containing the header element
+    var header = $(".clearHeader");
+    $(window).scroll(function () {
+      var scroll = $(window).scrollTop();
+
+      if (scroll >= 200) {
+        header.removeClass("clearHeader").fadeIn("5000").addClass("bg-tinted");
+      } else {
+        header.removeClass("bg-tinted").addClass("clearHeader");
+      }
     });
-  
+  });
+
   //REMOVE TITLE TAG FROM LINK HOVER
   $(".nav-link").removeAttr("title");
 

@@ -115,10 +115,18 @@
 
 .pagination {
   padding-top: 1rem;
+  text-transform: uppercase;
   padding-bottom: 1rem;
   width: 100%;
   background: #fcc303;
   margin-bottom: 0;
+  & a {
+    color: #000;
+    &:hover {
+      color: rgb(59, 127, 167);
+    }
+  }
+  color: #000;
 }
 
 li.active a {

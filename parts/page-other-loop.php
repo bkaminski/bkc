@@ -1,16 +1,23 @@
 <?php
-$args = array(
-    'posts_per_page' => 9,
+$custom_query_args = array(
+    'post_type' => 'post',
+    'category_name' => 'bens-other-blog',
+    'posts_per_page' => 6,
+    'paged' => $paged,
     'orderby' => 'date',
     'order' => 'DESC',
-    'cat' => 21,
 );
-$loop = new WP_Query($args); ?>
-<article class="bkc-blog pt-5">
+$custom_query_args['paged'] = get_query_var('paged') ? get_query_var('paged') : 1;
+$custom_query = new WP_Query($custom_query_args);
+$temp_query = $wp_query;
+$wp_query   = NULL;
+$wp_query   = $custom_query;
+?>
+<main class="bkc-blog pt-5">
     <div class="container pt-5 pb-5" style="overflow:hidden;">
         <div class="row row-cols-1 row-cols-lg-3 g-4 pt-5 pb-5">
-            <?php while ($loop->have_posts()) : $loop->the_post(); ?>
-                <div class="col pb-3 shadow-lg">
+            <?php while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
+                <div class="col pb-3">
                     <div class="card text-dark h-100 rounded-0">
                         <div id="post-<?php the_ID(); ?>" class="carousel vertical slide" data-bs-ride="carousel" data-bs-interval="<?php echo rand(3500, 6000); ?>">
                             <div class="carousel-inner rounded-0" role="listbox">
@@ -37,5 +44,23 @@ $loop = new WP_Query($args); ?>
                     </div>
                 </div>
             <?php endwhile; ?>
+            <?php wp_reset_query(); ?>
         </div>
     </div>
+    <div class="pagination">
+        <div class="container fw-bold">
+            <div class="row">
+                <div class="col-6">
+                    <?php previous_posts_link('< Newer Posts'); ?>
+                </div>
+                <div class="col-6">
+                    <span class="float-end">
+                        <?php next_posts_link('Older Posts >', $custom_query->max_num_pages);
+                        $wp_query = NULL;
+                        $wp_query = $temp_query; ?>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
