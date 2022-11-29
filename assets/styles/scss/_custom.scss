@@ -72,8 +72,13 @@ a {
   width: 100%;
 }
 .hv-align-text {
-  padding: 70px 0;
+  padding: 90px 0;
+  margin-top: 2.5rem;
   text-align: center;
+  @include breakpoint(md) {
+    padding: 75px 0;
+    margin-top: 0;
+  }
 }
 .typed-cursor {
   opacity: 1;
