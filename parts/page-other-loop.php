@@ -17,7 +17,7 @@ $wp_query   = $custom_query;
     <div class="container pt-5 pb-5" style="overflow:hidden;">
         <div class="row row-cols-1 row-cols-lg-3 g-4 pt-5 pb-5">
             <?php while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
-                <div class="col pb-3">
+                <div class="col pb-5">
                     <div class="card text-dark h-100 rounded-0">
                         <div id="post-<?php the_ID(); ?>" class="carousel vertical slide" data-bs-ride="carousel" data-bs-interval="<?php echo rand(3500, 6000); ?>">
                             <div class="carousel-inner rounded-0" role="listbox">
@@ -28,7 +28,7 @@ $wp_query   = $custom_query;
                                 </div>
                                 <div class="carousel-item">
                                     <a href="<?php the_permalink() ?>">
-                                        <img class="d-block img-fluid bkc-text card-img-top" src="holder.js/800x533?auto=yes&random=yes&text=<?php echo the_title(); ?>">
+                                        <img class="d-block img-fluid bkc-text card-img-top rounded-0" src="holder.js/800x533?auto=yes&random=yes&text=<?php echo the_title(); ?>">
                                     </a>
                                 </div>
                             </div>
@@ -64,4 +64,3 @@ $wp_query   = $custom_query;
         </div>
     </div>
 </main>
-
