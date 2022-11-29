@@ -1,5 +1,5 @@
 <?php 
-$apiurlquote = "http://quotes.stormconsultancy.co.uk/random.json";
+$apiurlquote = "https://geek-quote-api.herokuapp.com/v1/quote";
 $contentquote = file_get_contents($apiurlquote);
 $jsonquote = json_decode($contentquote, true);
 $author = $jsonquote['author'];
