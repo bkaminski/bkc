@@ -14,14 +14,7 @@
                 <a target="noopener" href="https://www.linkedin.com/in/kaminskiben/"><i class="fab fa-linkedin text-green fa-3x fa-fw"></i></a> <a target="noopener" href="https://github.com/bkaminski"><i class="fab fa-github-square text-green fa-3x fa-fw"></i></a>
             </div>
             <div class="col-md-4 pb-4">
-                <div id="btcData"></div>
-                <div class="text-center pt-4">
-                    <code class="text-white">I proudly accept Bitcoin donations!</code>
-                    <br>
-                    <img src="<?php echo get_home_url(); ?>/wp-content/uploads/bkcbtcqr.png" alt="Bitcoin QR Code" class="img-fluid">
-                    <br>
-                    <code class="text-green">3EWgQDw5X4zvPiJLeadQHQhtd7TStLDtWQ</code>
-                </div>
+                
             </div>
             <div class="col-md-4 text-center">
                 <h3>Nerdy Quotes</h3>

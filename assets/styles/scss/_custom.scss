@@ -22,10 +22,12 @@ h6 {
   font-weight: 900;
 }
 a {
-  color: #fcc303;
+  color: #ff9900;
   transition: 0.3s ease-in-out;
+  text-decoration: none;
   &:hover {
-    color: #c79905;
+    color: #f7b054;
+    text-decoration: underline;
   }
 }
 /* helper text colors */
@@ -38,6 +40,7 @@ a {
 .satoshi-orange {
   color: #ff9900;
 }
+/* end text colors */
 .page-header {
   width: 100%;
   min-height: 300px;
@@ -48,9 +51,6 @@ a {
   background-position: center;
   padding-top: 4rem;
 }
-
-/* end text colors */
-
 #preLoader {
   position: fixed;
   z-index: 9999;
@@ -70,6 +70,7 @@ a {
   background-blend-mode: multiply;
   height: 100%;
   width: 100%;
+  border-bottom: 4px solid #222;
 }
 .hv-align-text {
   padding: 90px 0;
@@ -208,7 +209,8 @@ a {
   display: block;
   position: relative;
   width: 100%;
-  min-height: 700px;
+  min-height: 600px;
+  border-bottom: 4px solid #96d10c;
 }
 .footer {
   display: block;
@@ -257,21 +259,13 @@ a {
   padding-top: 1rem;
   padding-bottom: 2.8rem;
 }
-
-.theme-colors {
-  color: #190c11;
-  color: #191a1e;
-  color: #96d10c;
-  color: #126c37;
-  color: #920f6f;
-  color: #26aa03;
-  color: #fcc303;
-  color: #f40150;
-  color: #191a1e;
-  color: #96d10c;
-  color: #126c37;
-  color: #920f6f;
-  color: #26aa03;
-  color: #fcc303;
-  color: #f40150;
+.p-text p {
+  color: #222;
+  font-size: 1.3rem;
+  font-family: "Roboto", sans-serif;
+}
+.bkcServices {
+  background: #ccc;
+  width: 100%;
+  min-height: 600px;
 }

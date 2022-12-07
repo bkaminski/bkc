@@ -27,9 +27,8 @@
 <header class="d-block d-lg-none">
 	<nav class="navbar fixed-top bg-dark">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="<?php echo get_home_url(); ?>">
-				<img src="<?php echo get_home_url(); ?>/wp-content/uploads/bk-logo-black.svg" alt="<?php echo get_bloginfo('name') ?>" width="75" class="img-fluid">
-				<span class="text-white bkc-text">Benjamin Kaminski Consulting</span>
+			<a class="navbar-brand" href="<?php echo get_home_url(); ?>"><img src="<?php echo get_home_url(); ?>/wp-content/uploads/bk-logo-black.svg" alt="<?php echo get_bloginfo('name') ?>" width="75" class="img-fluid">
+				<span class="text-white bkc-text">&nbsp;Benjamin Kaminski Consulting</span>
 			</a>
 			<br>
 			<button class="navbar-toggler rounded-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">

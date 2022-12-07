@@ -18,7 +18,7 @@
     display: block;
     backdrop-filter: blur(5px);
     background-blend-mode: multiply;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     transition: 0.3s ease-in-out;
   }
 }
@@ -40,10 +40,6 @@
 }
 .navbar-brand {
   font-size: 0.8rem;
-}
-.mobile-text-logo {
-  padding-left: 0.5rem;
-  font-family: "PingFang SC Regular", sans-serif;
 }
 .btn-bkc-success {
   background-color: #96d10c;
@@ -121,20 +117,23 @@
   background: #fcc303;
   margin-bottom: 0;
   & a {
-    color: #000;
+    color: #fcc303;
     &:hover {
-      color: rgb(59, 127, 167);
+      color: #fff;
     }
   }
-  color: #000;
 }
 
 li.active a {
   color: #fcc303;
 }
 .card {
-  border-right: 3px solid rgba(0, 0, 0, 0.5);
+  border-right: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 0px;
 }
 .card-body p {
   padding-bottom: 2rem;
+}
+.btn-close-green {
+  color: #96d10c;
 }

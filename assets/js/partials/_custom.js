@@ -1,5 +1,6 @@
 //jQuery no-conflict mode
 (function ($) {
+
   // Preloader
   $(window).on("load", function () {
     setTimeout(function () {
@@ -46,6 +47,11 @@
   //Delay logo text load
   $(".p3").slideUp(0).delay(8000).slideDown(1000);
 
+  //Pagination Styles
+  $(".pagination span.page--button a").addClass(
+    "btn btn-dark rounded-0 fw-bold"
+  );
+
   //BTC Price Widget
   $("document").ready(function () {
     refreshData();
@@ -76,7 +82,6 @@
   });
 
   //change navbar on scroll
-
   $(function () {
     //caches a jQuery object containing the header element
     var header = $(".clearHeader");
