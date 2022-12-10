@@ -1,11 +1,11 @@
 .nav-link {
-  color: #000;
+  color: #050910;
   margin-left: 1rem;
   @include breakpoint(md) {
     color: #fff;
   }
   &:hover {
-    color: rgb(0, 0, 0);
+    color:#050910;
     transition: 0.3s ease-in-out;
   }
 }
@@ -23,7 +23,7 @@
   }
 }
 .bg-tinted .nav-link:hover {
-  color: #fcc303;
+  color: #4DC856;
 }
 .offcanvas {
   background-color: rgba(233, 232, 232, 0.4);
@@ -114,10 +114,10 @@
   text-transform: uppercase;
   padding-bottom: 1rem;
   width: 100%;
-  background: #fcc303;
+  background: #429F8C;
   margin-bottom: 0;
   & a {
-    color: #fcc303;
+    color: #429F8C;
     &:hover {
       color: #fff;
     }
@@ -125,7 +125,7 @@
 }
 
 li.active a {
-  color: #fcc303;
+  color: #4fc3f7;
 }
 .card {
   border-right: 2px solid rgba(0, 0, 0, 0.5);
@@ -135,5 +135,22 @@ li.active a {
   padding-bottom: 2rem;
 }
 .btn-close-green {
-  color: #96d10c;
+  color: #4DC856;
 }
+.card-body {
+  color: #050910;
+}
+.card-footer {
+  background: #0F1E36;
+}
+
+.theme-colors {
+  color: #050910; //Dark Grey
+  color: #0F1E36; //Dark Navy
+  color: #4fc3f7; //Lightest Blue
+  color: #346ABC; //Light Blue
+  color: #295394; //Dark Blue
+  color: #429F8C; //Medium Green Wash
+  color: #4DC856; //Bright Green
+  
+  }

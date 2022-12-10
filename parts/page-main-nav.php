@@ -13,7 +13,7 @@
 					'container'         => '',
 					'container_class'   => '',
 					'container_id'      => '',
-					'menu_class'        => 'fw-bold navbar-nav ms-auto',
+					'menu_class'        => 'navbar-nav ms-auto',
 					'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
 					'walker'            => new WP_Bootstrap_Navwalker(),
 				)); ?>
@@ -53,10 +53,11 @@
 						'container'         => '',
 						'container_class'   => '',
 						'container_id'      => '',
-						'menu_class'        => 'fw-bold navbar-nav',
+						'menu_class'        => 'navbar-nav',
 						'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
 						'walker'            => new WP_Bootstrap_Navwalker(),
 					)); ?>
+					
 					<form class="d-flex pt-3" role="search">
 						<input id="searchBkc" type="text" class="form-control form-control-lg rounded-0" placeholder="Search This Site" aria-label="Search This Site" aria-describedby="button-addon2" value="<?php echo esc_html($s, 1); ?>" name="s" maxlength="33" required>
 						<button class="btn btn-bkc-success rounded-0" type="submit">Search</button>

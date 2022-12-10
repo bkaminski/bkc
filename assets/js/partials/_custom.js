@@ -52,17 +52,6 @@
     "btn btn-dark rounded-0 fw-bold"
   );
 
-  //BTC Price Widget
-  $("document").ready(function () {
-    refreshData();
-  });
-
-  function refreshData() {
-    $("#btcData").load("/bkc/wp-content/themes/bkc/btc-data.php", function () {
-      setTimeout(refreshData, 30000);
-    });
-  }
-
   //SCROLL TO TOP
   $(window).scroll(function () {
     if ($(this).scrollTop() >= 250) {

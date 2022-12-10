@@ -22,23 +22,20 @@ h6 {
   font-weight: 900;
 }
 a {
-  color: #ff9900;
+  color: #4DC856;
   transition: 0.3s ease-in-out;
   text-decoration: none;
   &:hover {
-    color: #f7b054;
+    color: #4fc3f7;
     text-decoration: underline;
   }
 }
 /* helper text colors */
 .text-green {
-  color: #96d10c;
+  color: #4DC856;
 }
-.text-dark {
-  color: #222;
-}
-.satoshi-orange {
-  color: #ff9900;
+.dark-text {
+  color: #050910;
 }
 /* end text colors */
 .page-header {
@@ -70,7 +67,6 @@ a {
   background-blend-mode: multiply;
   height: 100%;
   width: 100%;
-  border-bottom: 4px solid #222;
 }
 .hv-align-text {
   padding: 90px 0;
@@ -210,14 +206,14 @@ a {
   position: relative;
   width: 100%;
   min-height: 600px;
-  border-bottom: 4px solid #96d10c;
+  border-bottom: 4px solid #4DC856;
 }
 .footer {
   display: block;
   width: 100%;
   position: relative;
   min-height: 400px;
-  background-color: #222;
+  background-color: #0F1E36;
 }
 /* Go back to top button */
 #back-up {
@@ -260,12 +256,32 @@ a {
   padding-bottom: 2.8rem;
 }
 .p-text p {
-  color: #222;
-  font-size: 1.3rem;
+  color: #050910;
+  font-size: 1.1rem;
   font-family: "Roboto", sans-serif;
 }
 .bkcServices {
   background: #ccc;
   width: 100%;
   min-height: 600px;
+}
+a i {
+  color: #4DC856;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    color: #4fc3f7;
+  }
+}
+
+
+
+.theme-colors {
+color: #050910; //Dark Grey
+color: #0F1E36; //Dark Navy
+color: #4fc3f7; //Lightest Blue
+color: #346ABC; //Light Blue
+color: #295394; //Dark Blue
+color: #429F8C; //Medium Green Wash
+color: #4DC856; //Bright Green
+
 }

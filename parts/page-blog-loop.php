@@ -18,7 +18,7 @@ $wp_query   = $custom_query;
             <?php while (have_posts()) {
                 the_post(); ?>
                 <div class="col pb-5">
-                    <div class="card text-dark h-100 rounded-0">
+                    <div class="card dark-text h-100 rounded-0">
                         <div id="post-<?php the_ID(); ?>" class="carousel vertical slide rounded-0" data-bs-ride="carousel" data-bs-interval="<?php echo rand(3500, 6000); ?>">
                             <div class="carousel-inner rounded-0" role="listbox">
                                 <div class="carousel-item active">
@@ -38,7 +38,7 @@ $wp_query   = $custom_query;
                             <?php the_excerpt(); ?>
 
                         </div>
-                        <div class="card-footer bg-dark rounded-0">
+                        <div class="card-footer rounded-0">
                             <small class="text-green"><em>Last updated: <?php the_time('m/d/Y  g:i:a'); ?></em></small>
                         </div>
                     </div>

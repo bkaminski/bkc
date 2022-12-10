@@ -8,24 +8,23 @@
                 <h3>Benjamin Kaminski<br> Consulting</h3>
                 <p>Smyrna, Delaware, USA<br>
                     (302) 333-7462</p>
-                <p><a href="contact">Contact</a> | <a href="privacy-policy">Privacy</a></p>
+                <p><a href="contact">Contact Ben</a></p>
                 <a href="<?php echo get_home_url(); ?>"><img src="<?php echo get_home_url(); ?>/wp-content/uploads/bk-logo-black.svg" alt="<?php echo get_bloginfo('name') ?>" width="125" class="img-fluid pb-3"></a>
                 <br>
-                <a target="noopener" href="https://www.linkedin.com/in/kaminskiben/"><i class="fab fa-linkedin text-green fa-3x fa-fw"></i></a> <a target="noopener" href="https://github.com/bkaminski"><i class="fab fa-github-square text-green fa-3x fa-fw"></i></a>
+                <a title="My LinkedIn Profile" target="noopener" href="https://www.linkedin.com/in/kaminskiben/"><i class="fab fa-linkedin text-green fa-3x fa-fw"></i></a> <a title="My Github Profile" target="noopener" href="https://github.com/bkaminski"><i class="fab fa-github-square text-green fa-3x fa-fw"></i></a>
             </div>
             <div class="col-md-4 pb-4">
                 
             </div>
             <div class="col-md-4 text-center">
-                <h3>Nerdy Quotes</h3>
-                <?php echo get_template_part('parts/page', 'nerdy-quotes'); ?>
+                
             </div>
         </div>
     </div>
     <div class="container text-center pt-5">
         <div class="row">
             <div class="col-md-12">
-                <p class="small">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. All Rights Reserved.</p>
+                <p class="small">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. All Rights Reserved. <br><a href="privacy-policy">Privacy</a></p>
             </div>
         </div>
     </div>
