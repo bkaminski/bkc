@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row pt-5">
             <div class="col-md-4 bkc--info">
-                <h3>Benjamin Kaminski<br> Consulting</h3>
+                <h3 class="text-uppercase">Benjamin Kaminski<br> Consulting</h3>
                 <p>Smyrna, Delaware, USA<br>
                     (302) 333-7462</p>
                 <p><a href="contact">Contact Ben</a></p>

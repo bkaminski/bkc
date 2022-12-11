@@ -91,7 +91,7 @@ add_filter('post_thumbnail_html', 'bootstrap_fluid_images', 10);
 function excerpt_read_more_link($output)
 {
 	global $post;
-	return $output . '<a class="btn btn-lg btn-bkc-success text-dark text-uppercase btn-keepreading shadow rounded-0" href="' . get_permalink() . '">Keep Reading  <i class="fas fa-arrow-right fa-fw"></i></a><br>';
+	return $output . '<a class="btn btn-lg btn-bkc-success btn-block text-white text-uppercase btn-keepreading rounded-0" type="button" style="text-decoration:none;" href="' . get_permalink() . '">Keep Reading  <i class="fas fa-arrow-right fa-fw text-white"></i></a><br>';
 }
 add_filter('the_excerpt', 'excerpt_read_more_link');
 
@@ -179,7 +179,7 @@ if (!function_exists('bkc_comment')) :
 							</div>
 						</div>
 					</div>
-			<?php
+	<?php
 				break;
 		endswitch;
 	}

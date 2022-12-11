@@ -50,11 +50,13 @@ $wp_query   = $custom_query;
         <div class="container fw-bold">
             <div class="row">
                 <div class="col-6">
-                    <span class="page--button"><?php previous_posts_link('< Newer Posts'); ?></span>
+                    <span class="page--button">
+                        <?php previous_posts_link('<i class="fa fa-chevron-left ml-5"></i>&nbsp;&nbsp;Newer Posts'); ?>
+                    </span>
                 </div>
                 <div class="col-6">
                     <span class="float-end page--button">
-                        <?php next_posts_link('Older Posts >', $custom_query->max_num_pages);
+                        <?php next_posts_link('Older Posts&nbsp;&nbsp;<i class="fa fa-chevron-right"></i>', $custom_query->max_num_pages);
                         $wp_query = NULL;
                         $wp_query = $temp_query; ?>
                     </span>

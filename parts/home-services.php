@@ -1,6 +1,6 @@
 <section class="bkcServices text-dark">
     <div class="container pt-5 pb-2">
-        <h2 class="text-center dark-text pb-5"><?php echo "My Services" ;?></h2>
+        <h2 class="text-center dark-text pb-5 text-uppercase"><?php echo "My Services"; ?></h2>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
             <div class="col">
                 <div class="card h-100">
@@ -54,7 +54,7 @@
                     <i class="bi bi-people-fill text-center" style="font-size: 10em; color: #346ABC"></i>
                     <div class="card-body">
                         <h5 class="card-title text-uppercase">Social Media<br> Marketing</h5>
-                        <p class="card-text">Standardized social media marketing is boring. My approach to this niche is to get visitors off the social media website and on to your own! Let me show you the difference between likes and sales!</p>
+                        <p class="card-text">Standardized social media marketing is boring! My approach to this niche is to get visitors off the social media website and on to your own. Let me show you the difference between likes and sales.</p>
                     </div>
                 </div>
             </div>
@@ -71,7 +71,7 @@
                 <div class="card h-100">
                     <i class="bi bi-speedometer2 text-center" style="font-size: 10em; color: #346ABC"></i>
                     <div class="card-body">
-                        <h5 class="card-title text-uppercase">Website Optimization</h5>
+                        <h5 class="card-title text-uppercase">Website<br> Optimization</h5>
                         <p class="card-text">I can deliver mesurable results to you as far as website optimization is concerned. Caching, page speed insights, and accessibility help resolve existing issues. A faster website is a better website.</p>
                     </div>
                 </div>
