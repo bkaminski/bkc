@@ -6,6 +6,6 @@
     </div>
     <a class="hero-down" href="#go2main">
         <div class="btn-react"></div>
-        <i class="fa fa-chevron-down fa-lg"></i>
+        <i class="fa fa-chevron-down fa-2x bounce"></i>
     </a>
 </section>

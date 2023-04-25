@@ -1,25 +1,25 @@
 <?php
 //LOAD SCRIPTS
-function enqueue_dmi_scripts()
+function enqueue_bkc_scripts()
 {
-    wp_enqueue_script('Bootstrap-5.2.2', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js', array('jquery'), '', true);
+    wp_enqueue_script('Bootstrap-5.3', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js', array('jquery'), '', true);
     wp_enqueue_script('font-awesome-5', 'https://kit.fontawesome.com/42219cbebc.js', false, null, null, false);
     wp_enqueue_script('bkc-scripts', get_template_directory_uri() . '/assets/js/bkcScripts.min.js', array('jquery'), null, true, null);
     wp_enqueue_script('typed', '//cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js',  array('jquery'), null, true, null);
     wp_enqueue_script('parallax', get_template_directory_uri() . '/assets/js/parallax.min.js', array('jquery'), null, true, null);
     wp_enqueue_script('holderjs', 'https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js', false, null, true, null);
 }
-add_action('wp_enqueue_scripts', 'enqueue_dmi_scripts');
+add_action('wp_enqueue_scripts', 'enqueue_bkc_scripts');
 
 //LOAD CSS
-function enqueue_dmi_styles()
+function enqueue_bkc_styles()
 {
-    wp_enqueue_style('bootstrap-5.2.2', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css');
+    wp_enqueue_style('bootstrap-5.3', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css');
     wp_enqueue_style('bkc-styles', get_template_directory_uri() . '/assets/styles/bkcStyles.min.css');
-    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Source+Sans+Pro:wght@900&display=swap');
     wp_enqueue_style('bootstrap-icons', 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css');
+    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Source+Sans+Pro:wght@900&display=swap'); 
 }
-add_action('wp_enqueue_scripts', 'enqueue_dmi_styles');
+add_action('wp_enqueue_scripts', 'enqueue_bkc_styles');
 
 // Register Custom Navigation Walker
 require_once get_template_directory() . '/functions/class-wp-bootstrap-navwalker.php';

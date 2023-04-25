@@ -1,7 +1,7 @@
 <?php
 $custom_query_args = array(
     'post_type' => 'post',
-    'posts_per_page' => 6,
+    'posts_per_page' => 3,
     'paged' => $paged,
     'orderby' => 'date',
     'order' => 'DESC',
@@ -12,7 +12,7 @@ $temp_query = $wp_query;
 $wp_query   = NULL;
 $wp_query   = $custom_query;
 ?>
-<main class="bkc-blog pt-3">
+<section class="bkc-blog pt-3">
     <div class="container pt-5 pb-5" style="overflow:hidden;">
         <div class="row row-cols-1 row-cols-lg-3 g-4 pt-5 pb-5">
             <?php while (have_posts()) {
@@ -39,29 +39,11 @@ $wp_query   = $custom_query;
 
                         </div>
                         <div class="card-footer rounded-0">
-                            <small class="text-green"><em>Last updated: <?php the_time('m/d/Y  g:i:a'); ?></em></small>
+                            <small class="text-dark text-end"><em>Last updated: <?php the_time('m/d/Y  g:i:a'); ?></em></small>
                         </div>
                     </div>
                 </div>
             <?php } ?>
         </div>
     </div>
-    <div class="pagination">
-        <div class="container fw-bold">
-            <div class="row">
-                <div class="col-6">
-                    <span class="page--button">
-                        <?php previous_posts_link('<i class="fa fa-chevron-left ml-5"></i>&nbsp;&nbsp;Newer Posts'); ?>
-                    </span>
-                </div>
-                <div class="col-6">
-                    <span class="float-end page--button">
-                        <?php next_posts_link('Older Posts&nbsp;&nbsp;<i class="fa fa-chevron-right"></i>', $custom_query->max_num_pages);
-                        $wp_query = NULL;
-                        $wp_query = $temp_query; ?>
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
-</main>
+</section>

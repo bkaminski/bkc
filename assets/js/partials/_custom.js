@@ -1,6 +1,5 @@
 //jQuery no-conflict mode
 (function ($) {
-
   // Preloader
   $(window).on("load", function () {
     setTimeout(function () {
@@ -87,6 +86,9 @@
 
   //REMOVE TITLE TAG FROM LINK HOVER
   $(".nav-link").removeAttr("title");
+
+  //HOME PAGE BLOG LINK BUTTONS DISPLAY BLOCK
+  $("body.page-id-29 .btn-keepreading").css("position", "relative");
 
   //end no conflict mode
 })(jQuery);

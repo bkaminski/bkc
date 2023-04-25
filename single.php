@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<article class="bkc-post text-dark pt-5">
+<article class="bkc-post dark-text pt-5">
     <div class="container pt-5">
         <div class="row pt-5">
             <div class="col-md-12">

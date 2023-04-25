@@ -6,4 +6,6 @@
 
 <?php get_template_part( 'parts/home', 'services' ); ?>
 
+<?php get_template_part( 'parts/home', 'testimonials' ); ?>
+
 <?php get_footer(); ?>
