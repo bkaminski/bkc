@@ -10,7 +10,9 @@
             <div class="col-md-4">
                 <div class="nerdy-quote">
                     <h3 class="text-bold text-uppercase">Nerdy Quotes:</h3>
-                    <span style="font-size: 2rem;"><?php echo get_nerdy_quote(); ?></span>
+                        <span style="font-size: 2rem;">
+                            <em><?php echo get_nerdy_quote(); ?></em>
+                        </span>
                 </div>
             </div>
             <div class="col-md-4 bkc--info pb-4">
