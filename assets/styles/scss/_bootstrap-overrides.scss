@@ -94,3 +94,12 @@ li.active a {
   background: transparent;
   color: #000;
 }
+.carousel-inner {
+  height: 100%;
+  @include breakpoint(md) {
+    height: 190.5px;
+  }
+  @include breakpoint(lg) {
+    height: 100%;
+  }
+}

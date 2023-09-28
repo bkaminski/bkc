@@ -19,7 +19,7 @@ $wp_query   = $custom_query;
                 the_post(); ?>
                 <div class="col pb-5">
                     <div class="card dark-text h-100 rounded-0">
-                        <div id="post-<?php the_ID(); ?>" class="carousel vertical slide rounded-0" data-bs-ride="carousel" data-bs-interval="<?php echo rand(3500, 6000); ?>">
+                        <div id="post-<?php the_ID(); ?>" class="carousel vertical slide rounded-0" data-bs-ride="carousel" data-bs-interval="<?php echo random_int(3500, 6000); ?>">
                             <div class="carousel-inner rounded-0" role="listbox">
                                 <div class="carousel-item active">
                                     <a href="<?php the_permalink() ?>" rel="canonical" title="<?php the_title(); ?>">

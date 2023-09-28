@@ -36,7 +36,7 @@
 			</button>
 			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 				<div class="offcanvas-header">
-					<h5 class="offcanvas-title text-shadow text-uppercase" id="offcanvasNavbarLabel">Navigation</h5>
+					<h5 class="offcanvas-title text-uppercase" id="offcanvasNavbarLabel">Navigation</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 				</div>
 				<div class="offcanvas-body">

@@ -69,6 +69,14 @@
     );
   });
 
+  //Animate slide up and down nav dropdowns.
+  $(".dropdown").on("show.bs.dropdown", function (e) {
+    $(this).find(".dropdown-menu").first().stop(true, true).slideDown("fast");
+  });
+  $(".dropdown").on("hide.bs.dropdown", function (e) {
+    $(this).find(".dropdown-menu").first().stop(true, true).slideUp("fast");
+  });
+
   //change navbar on scroll
   $(function () {
     //caches a jQuery object containing the header element
@@ -76,7 +84,7 @@
     $(window).scroll(function () {
       var scroll = $(window).scrollTop();
 
-      if (scroll >= 200) {
+      if (scroll >= 150) {
         header.removeClass("clearHeader").fadeIn("5000").addClass("bg-tinted");
       } else {
         header.removeClass("bg-tinted").addClass("clearHeader");
@@ -86,9 +94,6 @@
 
   //REMOVE TITLE TAG FROM LINK HOVER
   $(".nav-link").removeAttr("title");
-
-  //HOME PAGE BLOG LINK BUTTONS DISPLAY BLOCK
-  $("body.page-id-29 .btn-keepreading").css("position", "relative");
 
   //end no conflict mode
 })(jQuery);

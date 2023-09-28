@@ -1,4 +1,7 @@
 <?php get_header(); ?>
+<div class="text-white">
+    <?php get_template_part('parts/page', 'int-header'); ?>
+</div>
 <article class="bkc-post dark-text pt-5">
     <div class="container pt-5">
         <div class="row pt-5">
@@ -9,7 +12,6 @@
                             <p><?php the_content(); ?></p>
                         </div>
                         <?php comments_template(); ?>
-                        <p class="pt-5"><small><?php the_tags('<span class="badge bg-dark">Related:</span>&nbsp;<span itemprop="keywords">'); ?></span></small><br /></p>
                     <?php endwhile;
                 else : ?>
                     <p><?php _e('Whoops, something went horribly wrong. Please seek help immediately.'); ?></p>
@@ -17,5 +19,6 @@
             </div>
         </div>
     </div>
+    <?php get_template_part('parts/page', 'tags'); ?>
 </article>
 <?php get_footer(); ?>

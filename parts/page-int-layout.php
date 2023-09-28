@@ -1,4 +1,4 @@
-<section class="page-layout">
+<section class="page-layout pt-5 pb-5">
     <div class="container">
         <div class="row">
             <div class="col dark-text">

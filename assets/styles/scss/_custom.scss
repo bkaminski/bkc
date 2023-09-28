@@ -72,11 +72,13 @@ a {
   height: 100%;
   width: 100%;
 }
-.testimonials {
-  display: block;
-  background-color: rgba(0, 0, 0, 0.25);
+.latest-blog {
+  background-image: url('../../../../uploads/background-5077810.svg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   width: 100%;
-  min-height: 850px;
 }
 .hv-align-text {
   padding: 90px 0;
@@ -190,26 +192,9 @@ a {
 }
 .hero-down {
   position: absolute;
-  bottom: 0;
   font-size: 2em;
-  width: 2em;
-  height: 2em;
-  color: #f5f5f5;
-  border-radius: 100%;
-  &:hover,
-  &:focus {
-    color: #ccc;
-  }
-  &:active {
-    color: #f5f5f5;
-  }
-
-  i {
-    vertical-align: bottom;
-    position: relative;
-    top: 0.1em;
-    margin-left: -55px;
-  }
+  bottom: 0;
+  margin-bottom: 50px;
 }
 .bkc-main-content {
   display: block;
@@ -230,7 +215,7 @@ a {
   display: block;
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 800px;
   background-color: #f5f5f5;
 }
 /* Go back to top button */
@@ -265,14 +250,6 @@ a {
 .bkc-blog {
   overflow: hidden;
 }
-.cat-select {
-  background-color: #ccc;
-  display: block;
-  position: relative;
-  width: 100%;
-  padding-top: 1rem;
-  padding-bottom: 2.8rem;
-}
 .p-text p {
   color: #050910;
   font-size: 1.1rem;
@@ -282,13 +259,6 @@ a {
   background: #ccc;
   width: 100%;
   min-height: 600px;
-}
-a i {
-  color: #4dc856;
-  transition: 0.3s ease-in-out;
-  &:hover {
-    color: #4fc3f7;
-  }
 }
 .btn-bkc-success {
   background-color: #4dc856 !important;
@@ -348,12 +318,12 @@ a i {
   color: #4dc856;
 }
 .bg-tinted2 {
-    display: block;
-    backdrop-filter: blur(7px);
-    background-blend-mode: multiply;
-    background-color: rgba(0, 0, 0, 0.6);
-    transition: 0.3s ease-in-out;
-  }
+  position: relative;
+  backdrop-filter: blur(7px);
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: 0.3s ease-in-out;
+}
 .bg-tinted2 .nav-link:hover {
   color: #4dc856;
 }
@@ -435,4 +405,15 @@ a i {
   100% {
     top: 0;
   }
+}
+.tags {
+  display: block;
+  width: 100%;
+  min-height: 75px;
+  background: #222;
+}
+a.read-more {
+  position: absolute;
+  bottom:0;
+  margin-bottom: 50px;
 }

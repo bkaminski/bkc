@@ -1,4 +1,4 @@
-<section class="testimonials text-center pt-5 pb-5 bg-tinted2" data-parallax="scroll" data-image-src="<?php echo get_home_url(); ?>/wp-content/uploads/background-5077810.svg">
+<section class="latest-blog pt-5 bg-tinted2">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
