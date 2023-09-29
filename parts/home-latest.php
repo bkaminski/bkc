@@ -12,7 +12,7 @@ $temp_query = $wp_query;
 $wp_query   = NULL;
 $wp_query   = $custom_query;
 ?>
-<section class="bkc-blog pt-3">
+<section class="bkc-blog pt-3 latest--blog">
     <div class="container pt-5 pb-5" style="overflow:hidden;">
         <div class="row row-cols-1 row-cols-lg-3 g-4 pt-5 pb-5">
             <?php while (have_posts()) {

@@ -1,11 +1,11 @@
 <section class="bkcServices text-dark">
     <div class="container pt-5 pb-2">
         <h2 class="text-center dark-text pb-5 text-uppercase"><?php echo "My Services"; ?></h2>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 hero--text">
             <div class="col">
                 <div class="card h-100">
                     <div class="text-center pt-5">
-                        <a href="custom-wordpress"><i class="fa-brands fa-wordpress" style="font-size: 10em; color: #346ABC"></i></a>
+                        <a href="services/custom-wordpress"><i class="fa-brands fa-wordpress" style="font-size: 10em; color: #346ABC"></i></a>
                     </div>
                     <div class="card-body pt-5">
                         <h5 class="card-title text-uppercase">Custom<br>WordPress</h5>
@@ -13,7 +13,7 @@
                     </div>
                     <div class="card-footer rounded-0">
                         <div class="d-grid gap-2">
-                            <a href="custom-wordpress" class="btn btn-bkc-success rounded-0" style="text-decoration:none;">View This Service</a>
+                            <a href="services/custom-wordpress" class="btn btn-bkc-success rounded-0" style="text-decoration:none;">View This Service</a>
                         </div>
                     </div>
                 </div>
@@ -21,7 +21,7 @@
             <div class="col">
                 <div class="card h-100">
                     <div class="text-center pt-5">
-                        <a href="web-consulting"><i class="fa-solid fa-laptop-code" style="font-size: 10em; color: #346ABC"></i></a>
+                        <a href="services/web-consulting"><i class="fa-solid fa-laptop-code" style="font-size: 10em; color: #346ABC"></i></a>
                     </div>
                     <div class="card-body pt-5">
                         <h5 class="card-title text-uppercase">Web<br>Consulting</h5>
@@ -29,7 +29,7 @@
                     </div>
                     <div class="card-footer rounded-0">
                         <div class="d-grid gap-2">
-                            <a href="web-consulting" class="btn btn-bkc-success rounded-0" style="text-decoration:none;">View This Service</a>
+                            <a href="services/web-consulting" class="btn btn-bkc-success rounded-0" style="text-decoration:none;">View This Service</a>
                         </div>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
             <div class="col">
                 <div class="card h-100">
                     <div class="text-center pt-5">
-                        <a href="search-engine-optimization-seo"><i class="fa-brands fa-searchengin" style="font-size: 10em; color: #346ABC"></i></a>
+                        <a href="services/search-engine-optimization-seo"><i class="fa-brands fa-searchengin" style="font-size: 10em; color: #346ABC"></i></a>
                     </div>
                     <div class="card-body pt-5">
                         <h5 class="card-title text-uppercase">Search Engine Optimization</h5>
@@ -45,7 +45,7 @@
                     </div>
                     <div class="card-footer rounded-0">
                         <div class="d-grid gap-2">
-                            <a href="search-engine-optimization-seo" class="btn btn-bkc-success rounded-0" style="text-decoration:none;">View This Service</a>
+                            <a href="services/search-engine-optimization-seo" class="btn btn-bkc-success rounded-0" style="text-decoration:none;">View This Service</a>
                         </div>
                     </div>
                 </div>
@@ -53,7 +53,7 @@
             <div class="col">
                 <div class="card h-100">
                     <div class="text-center pt-5">
-                        <a href="e-commerce"><i class="fa-solid fa-cash-register" style="font-size: 10em; color: #346ABC"></i></a>
+                        <a href="services/e-commerce"><i class="fa-solid fa-cash-register" style="font-size: 10em; color: #346ABC"></i></a>
                     </div>
                     <div class="card-body pt-5">
                         <h5 class="card-title text-uppercase">E-Commerce<br> Solutions</h5>
@@ -61,17 +61,17 @@
                     </div>
                     <div class="card-footer rounded-0">
                         <div class="d-grid gap-2">
-                            <a href="e-commerce" class="btn btn-bkc-success rounded-0" style="text-decoration:none;">View This Service</a>
+                            <a href="services/e-commerce" class="btn btn-bkc-success rounded-0" style="text-decoration:none;">View This Service</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 pt-4 pb-5">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 pt-4 pb-5 hero--btn">
             <div class="col">
                 <div class="card h-100">
                     <div class="text-center pt-5">
-                        <a href="website-maintenance-updates"><i class="fa-solid fa-gear" style="font-size: 10em; color: #346ABC"></i></a>
+                        <a href="services/website-maintenance-updates"><i class="fa-solid fa-gear" style="font-size: 10em; color: #346ABC"></i></a>
                     </div>
                     <div class="card-body pt-5">
                         <h5 class="card-title text-uppercase">Website Updates and Maintenance</h5>
@@ -79,7 +79,7 @@
                     </div>
                     <div class="card-footer rounded-0">
                         <div class="d-grid gap-2">
-                            <a href="website-maintenance-updates" class="btn btn-bkc-success rounded-0" style="text-decoration:none;">View This Service</a>
+                            <a href="services/website-maintenance-updates" class="btn btn-bkc-success rounded-0" style="text-decoration:none;">View This Service</a>
                         </div>
                     </div>
                 </div>
@@ -87,7 +87,7 @@
             <div class="col">
                 <div class="card h-100">
                     <div class="text-center pt-5">
-                        <a href="social-media-marketing"><i class="fa-solid fa-share-nodes text-center" style="font-size: 10em; color: #346ABC"></i></a>
+                        <a href="services/social-media-marketing"><i class="fa-solid fa-share-nodes text-center" style="font-size: 10em; color: #346ABC"></i></a>
                     </div>
                     <div class="card-body pt-5">
                         <h5 class="card-title text-uppercase">Social Media<br> Marketing</h5>
@@ -95,7 +95,7 @@
                     </div>
                     <div class="card-footer rounded-0">
                         <div class="d-grid gap-2">
-                            <a href="social-media-marketing" class="btn btn-bkc-success rounded-0" style="text-decoration:none;">View This Service</a>
+                            <a href="services/social-media-marketing" class="btn btn-bkc-success rounded-0" style="text-decoration:none;">View This Service</a>
                         </div>
                     </div>
                 </div>
@@ -103,7 +103,7 @@
             <div class="col">
                 <div class="card h-100">
                     <div class="text-center pt-5">
-                        <a href="third-party-software-integration"><i class="fa-solid fa-code" style="font-size: 10em; color: #346ABC;"></i></a>
+                        <a href="services/third-party-software-integration"><i class="fa-solid fa-code" style="font-size: 10em; color: #346ABC;"></i></a>
                     </div>
                     <div class="card-body pt-5">
                         <h5 class="card-title text-uppercase">Third Party<br>Software Integration</h5>
@@ -111,7 +111,7 @@
                     </div>
                     <div class="card-footer rounded-0">
                         <div class="d-grid gap-2">
-                            <a href="third-party-software-integration" class="btn btn-bkc-success rounded-0" style="text-decoration:none;">View This Service</a>
+                            <a href="services/third-party-software-integration" class="btn btn-bkc-success rounded-0" style="text-decoration:none;">View This Service</a>
                         </div>
                     </div>
                 </div>
@@ -119,7 +119,7 @@
             <div class="col">
                 <div class="card h-100">
                     <div class="text-center pt-5">
-                        <a href="website-optimization"><i class="fa-solid fa-gauge-high" style="font-size: 10em; color: #346ABC"></i></a>
+                        <a href="services/website-optimization"><i class="fa-solid fa-gauge-high" style="font-size: 10em; color: #346ABC"></i></a>
                     </div>
                     <div class="card-body pt-5">
                         <h5 class="card-title text-uppercase">Website<br> Optimization</h5>
@@ -127,7 +127,7 @@
                     </div>
                     <div class="card-footer rounded-0">
                         <div class="d-grid gap-2">
-                            <a href="website-optimization" class="btn btn-bkc-success rounded-0" style="text-decoration:none;">View This Service</a>
+                            <a href="services/website-optimization" class="btn btn-bkc-success rounded-0" style="text-decoration:none;">View This Service</a>
                         </div>
                     </div>
                 </div>

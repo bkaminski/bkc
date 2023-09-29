@@ -6,6 +6,9 @@ add_theme_support('post-thumbnails');
 // REMOVES SCRIPT AND STYLE TYPE ATTR
 add_theme_support('html5', ['script', 'style']);
 
+// REMOVE AUTHOR META FROM POSTS
+add_filter( 'wpseo_meta_author', '__return_false' );
+
 //TITLE TAG SUPPORT
 add_theme_support('title-tag');
 

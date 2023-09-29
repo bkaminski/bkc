@@ -3,7 +3,7 @@
 	<nav class="navbar navbar-expand-lg fixed-top clearHeader">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="<?php echo get_home_url(); ?>">
-				<img src="<?php echo get_home_url(); ?>/wp-content/uploads/bk-logo-black.svg" width="75" alt="<?php echo get_bloginfo('name') ?>" class="img-fluid">
+				<img src="<?php echo get_home_url(); ?>/wp-content/uploads/bk-logo-white.svg" width="75" alt="<?php echo get_bloginfo('name') ?>" class="img-fluid">
 			</a>
 			<div class="collapse navbar-collapse text-uppercase" id="bkcNav">
 				<?php
@@ -27,7 +27,7 @@
 <header class="d-block d-lg-none">
 	<nav class="navbar fixed-top bg-dark">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="<?php echo get_home_url(); ?>"><img src="<?php echo get_home_url(); ?>/wp-content/uploads/bk-logo-black.svg" alt="<?php echo get_bloginfo('name') ?>" width="75" class="img-fluid">
+			<a class="navbar-brand" href="<?php echo get_home_url(); ?>"><img src="<?php echo get_home_url(); ?>/wp-content/uploads/bk-logo-white.svg" alt="<?php echo get_bloginfo('name') ?>" width="75" class="img-fluid">
 				<span class="text-white bkc-text">&nbsp;Benjamin Kaminski Consulting</span>
 			</a>
 			<br>
@@ -57,11 +57,6 @@
 						'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
 						'walker'            => new WP_Bootstrap_Navwalker(),
 					)); ?>
-					
-					<form class="d-flex pt-3" role="search">
-						<input id="searchBkc" type="text" class="form-control form-control-lg rounded-0" placeholder="Search This Site" aria-label="Search This Site" aria-describedby="button-addon2" value="<?php echo esc_html($s, 1); ?>" name="s" maxlength="33" required>
-						<button class="btn btn-bkc-success rounded-0" type="submit">Search</button>
-					</form>
 				</div>
 			</div>
 		</div>
